@@ -56,7 +56,7 @@ public class FicherosTexto implements InterfazFicherosTexto {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             return lineas;
         }
     }
@@ -69,8 +69,41 @@ public class FicherosTexto implements InterfazFicherosTexto {
 
     @Override
     public int palabrasPentavocalica(String rutaFichero) {
-
-        return 0;
+        Scanner sc = null;
+        String palabra = null;
+        int a = 0, e = 0, i = 0, o = 0, u = 0, h = 0;
+        try {
+            sc = new Scanner(new File(rutaFichero));
+            while (sc.hasNext()) {
+                palabra = sc.next();
+                palabra.toLowerCase();
+                for (int j = 0; j < palabra.length(); j++) {
+                    if (palabra.charAt(j) == 'a') {
+                        a = 1;
+                    } else if (palabra.charAt(j) == 'e') {
+                        e = 1;
+                    } else if (palabra.charAt(j) == 'i') {
+                        i = 1;
+                    } else if (palabra.charAt(j) == 'o') {
+                        o = 1;
+                    } else if (palabra.charAt(j) == 'u') {
+                        u = 1;
+                    }
+                }
+                if (a == 1 && e == 1 && i == 1 && o == 1 && u == 1) {
+                    h++;
+                }
+                a = 0;
+                e = 0;
+                i = 0;
+                o = 0;
+                u = 0;
+            }
+            sc.close();
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        return h;
     }
 
     @Override
