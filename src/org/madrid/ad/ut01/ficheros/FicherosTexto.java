@@ -2,6 +2,9 @@ package org.madrid.ad.ut01.ficheros;
 
 import org.madrid.ad.ut01.ficheros.interfaces.InterfazFicherosTexto;
 
+import java.io.File;
+import java.io.FileReader;
+
 /**
  * 
  * @author Escribe_aqui_tu_nombre
@@ -21,6 +24,30 @@ public class FicherosTexto implements InterfazFicherosTexto{
 	@Override
 	public int contarCaracteres(String rutaFichero) {
 		// TODO Auto-generated method stub
+		try{
+			int cont = 0;
+			FileReader fichero = new FileReader(new File(rutaFichero));
+
+			int finalizar = 0;
+
+			/*
+			while(fichero.read() != -1){
+				finalizar++;
+			}
+			*/
+
+			while(fichero.read() != -1){
+				if(fichero.read() != ' ') {
+					finalizar++;
+				}
+			}
+			System.out.println("El quijote contiene " + finalizar + " caracteres");
+
+			fichero.close();
+		} catch(Exception e){
+			System.out.println(e.toString());
+		}
+
 		return 0;
 	}
 
