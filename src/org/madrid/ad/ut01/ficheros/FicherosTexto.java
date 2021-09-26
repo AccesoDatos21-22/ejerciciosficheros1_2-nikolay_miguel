@@ -2,10 +2,7 @@ package org.madrid.ad.ut01.ficheros;
 
 import org.madrid.ad.ut01.ficheros.interfaces.InterfazFicherosTexto;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 /**
@@ -18,26 +15,26 @@ public class FicherosTexto implements InterfazFicherosTexto {
     @Override
     public void leer(String rutaFichero) {
         // TODO Auto-generated method stub
-        FileReader fr = null;
+        BufferedReader br = null;
         try {
-            fr = new FileReader(rutaFichero);
-            int caracter = fr.read();
-            while (caracter != -1) {
+            br = new BufferedReader(new FileReader(rutaFichero));
+            int caracter=br.read();
+            while(caracter!=-1){
                 System.out.println((char)caracter);
-                caracter = fr.read();
+                caracter=br.read();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (fr != null)
-                    fr.close();
-            } catch (Exception e) {
+        }finally {
+            try{
+                if(br!=null) br.close();
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
     }
 
     @Override
