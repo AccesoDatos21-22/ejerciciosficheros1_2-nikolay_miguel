@@ -3,6 +3,7 @@ package org.madrid.ad.ut01.ficheros;
 import org.madrid.ad.ut01.ficheros.interfaces.InterfazFicherosTexto;
 
 import java.io.*;
+import java.nio.Buffer;
 import java.util.Scanner;
 
 /**
@@ -18,18 +19,18 @@ public class FicherosTexto implements InterfazFicherosTexto {
         BufferedReader br = null;
         try {
             br = new BufferedReader(new FileReader(rutaFichero));
-            int caracter=br.read();
-            while(caracter!=-1){
-                System.out.println((char)caracter);
-                caracter=br.read();
+            int caracter = br.read();
+            while (caracter != -1) {
+                System.out.println((char) caracter);
+                caracter = br.read();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            try{
-                if(br!=null) br.close();
+        } finally {
+            try {
+                if (br != null) br.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -45,8 +46,19 @@ public class FicherosTexto implements InterfazFicherosTexto {
 
     @Override
     public int contarLineas(String rutaFichero) {
-        // TODO Auto-generated method stub
-        return 0;
+        BufferedReader br = null;
+        int lineas = 0;
+        try {
+            br = new BufferedReader(new FileReader(rutaFichero));
+            lineas = (int) br.lines().count();
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            return lineas;
+        }
     }
 
     @Override
@@ -57,7 +69,7 @@ public class FicherosTexto implements InterfazFicherosTexto {
 
     @Override
     public int palabrasPentavocalica(String rutaFichero) {
-        // TODO Auto-generated method stub
+
         return 0;
     }
 
