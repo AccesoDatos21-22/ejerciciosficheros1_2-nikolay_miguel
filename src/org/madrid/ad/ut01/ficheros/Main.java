@@ -9,6 +9,7 @@ public class Main {
 		FicherosTexto ejer = new FicherosTexto();
 		ejer.contarCaracteres(args[0]);
 		ejer.contarPalabras(args[0]);
+		ejer.palabraMasLarga(args[0]);
 		
 
 	}

@@ -42,6 +42,7 @@ public class FicherosTexto implements InterfazFicherosTexto{
 					finalizar++;
 				}
 			}
+
 			System.out.println("El quijote contiene " + finalizar + " caracteres");
 
 			fichero.close();
@@ -66,11 +67,15 @@ public class FicherosTexto implements InterfazFicherosTexto{
 
 			int cont = 0;
 
-			while(fichero.readLine() != null){
-				String linea = fichero.readLine();
+			String linea = fichero.readLine();
+
+			while(linea != null){
 				String[] palabras = linea.split(" ");
 
 				cont += palabras.length;
+
+				linea = fichero.readLine();
+
 			}
 
 			System.out.println("El quijote contiene " + cont + " palabras.");
@@ -91,6 +96,31 @@ public class FicherosTexto implements InterfazFicherosTexto{
 	@Override
 	public int palabraMasLarga(String rutaFichero) {
 		// TODO Auto-generated method stub
+		try{
+			BufferedReader fichero = new BufferedReader(new FileReader(rutaFichero));
+
+			String linea = fichero.readLine();
+
+			String palabraLarga = "";
+
+			while(linea != null){
+				String[] palabras = linea.split(" ");
+
+				for(int i = 0; i < palabras.length; i++){
+					if(palabraLarga.length() < palabras[i].length()){
+						palabraLarga = palabras[i];
+					}
+				}
+
+				linea = fichero.readLine();
+			}
+
+			System.out.println("La palabra más larga es: " + palabraLarga);
+
+			fichero.close();
+		} catch(Exception e){
+			System.out.println(e.toString());
+		}
 		return 0;
 	}
 
