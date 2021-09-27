@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * 
  * @author Miguel Y Nikolay
  * @date 
- * @version 64a7a45e0c092887834f1f77c5694830455e47cd
+ * @version 
  * @license GPLv3
  */
 public class FicherosTexto implements InterfazFicherosTexto {

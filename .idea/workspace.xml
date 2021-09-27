@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ef3f0f-72fd-47fb-abc5-5db34003bcc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/FicherosTexto.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/FicherosTexto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/interfaces/InterfazFicherosTexto.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/interfaces/InterfazFicherosTexto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/madrid/ad/ut01/ficheros/FicherosTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/madrid/ad/ut01/ficheros/FicherosTexto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/madrid/ad/ut01/ficheros/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/madrid/ad/ut01/ficheros/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
