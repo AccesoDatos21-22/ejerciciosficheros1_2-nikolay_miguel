@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b0e597-15b3-4d5d-997b-39c784e4e7d6" name="Changes" comment="" />
+    <list default="true" id="78b0e597-15b3-4d5d-997b-39c784e4e7d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicios1.2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/FicherosTexto.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/FicherosTexto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/interfaces/InterfazFicherosTexto.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/org/madrid/ad/ut01/ficheros/interfaces/InterfazFicherosTexto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/madrid/ad/ut01/ficheros/FicherosTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/madrid/ad/ut01/ficheros/FicherosTexto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/madrid/ad/ut01/ficheros/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/madrid/ad/ut01/ficheros/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
