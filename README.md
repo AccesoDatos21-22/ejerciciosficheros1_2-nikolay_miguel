@@ -1,4 +1,4 @@
-##Ejercicio grupal Nikolay y Miguel
+# Ejercicio grupal Nikolay y Miguel
 Para este trabajo grupal hemos creado dos ramas las cuales son "Niko" y "Miguel"
 en la cual cada uno a hecho los ejercicios que le correspondian.
 
