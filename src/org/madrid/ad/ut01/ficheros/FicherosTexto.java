@@ -2,6 +2,7 @@ package org.madrid.ad.ut01.ficheros;
 
 import org.madrid.ad.ut01.ficheros.interfaces.InterfazFicherosTexto;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
@@ -60,6 +61,24 @@ public class FicherosTexto implements InterfazFicherosTexto{
 	@Override
 	public int contarPalabras(String rutaFichero) {
 		// TODO Auto-generated method stub
+		try{
+			BufferedReader fichero = new BufferedReader(new FileReader(new File(rutaFichero)));
+
+			int cont = 0;
+
+			while(fichero.readLine() != null){
+				String linea = fichero.readLine();
+				String[] palabras = linea.split(" ");
+
+				cont += palabras.length;
+			}
+
+			System.out.println("El quijote contiene " + cont + " palabras.");
+
+			fichero.close();
+		} catch(Exception e) {
+			System.out.println(e.toString());
+		}
 		return 0;
 	}
 

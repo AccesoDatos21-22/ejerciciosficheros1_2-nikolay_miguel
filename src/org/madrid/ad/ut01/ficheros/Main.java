@@ -8,6 +8,7 @@ public class Main {
 		//Ejercicio 3
 		FicherosTexto ejer = new FicherosTexto();
 		ejer.contarCaracteres(args[0]);
+		ejer.contarPalabras(args[0]);
 		
 
 	}
