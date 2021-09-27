@@ -10,8 +10,7 @@ public class Main {
 		ejer.contarCaracteres(args[0]);
 		ejer.contarPalabras(args[0]);
 		ejer.palabraMasLarga(args[0]);
-		
-
+		ejer.frecuenciaLetras(args[0]);
 	}
 
 }
