@@ -21,7 +21,7 @@ public class FicherosTexto implements InterfazFicherosTexto {
             br = new BufferedReader(new FileReader(rutaFichero));
             int caracter = br.read();
             while (caracter != -1) {
-                System.out.println((char) caracter);
+                System.out.print((char) caracter);
                 caracter = br.read();
             }
         } catch (FileNotFoundException e) {
@@ -114,8 +114,52 @@ public class FicherosTexto implements InterfazFicherosTexto {
 
     @Override
     public int frecuenciaVocales(String rutaFichero) {
-        // TODO Auto-generated method stub
-        return 0;
+        BufferedReader br = null;
+        int a, e, i, o, u;
+        a = e = i = o = u = 0;
+        try {
+            br = new BufferedReader(new FileReader(rutaFichero));
+            String linea = br.readLine();
+            while (linea != null) {
+                linea = linea.toLowerCase();
+                for (int j = 0; j < linea.length(); j++) {
+                    switch (linea.charAt(j)) {
+                        case 'a':
+                            a++;
+                            break;
+                        case 'e':
+                            e++;
+                            break;
+                        case 'i':
+                            i++;
+                            break;
+                        case 'o':
+                            o++;
+                            break;
+                        case 'u':
+                            u++;
+                            break;
+                    }
+                }
+                linea = br.readLine();
+            }
+            System.out.println("A: " + a);
+            System.out.println("E: " + e);
+            System.out.println("I: " + i);
+            System.out.println("O: " + o);
+            System.out.println("U: " + u);
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                br.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+        return 1;
     }
 
     @Override
