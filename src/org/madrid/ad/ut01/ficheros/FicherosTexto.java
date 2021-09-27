@@ -7,8 +7,9 @@ import java.nio.Buffer;
 import java.util.Scanner;
 
 /**
- * @author Escribe_aqui_tu_nombre
+ * @author Miguel y Niko
  * @date
+ * @version
  * @license GPLv3
  */
 public class FicherosTexto implements InterfazFicherosTexto {
